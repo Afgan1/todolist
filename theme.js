@@ -1,6 +1,6 @@
 let template = JSON.parse(localStorage.getItem("template"))
 if(!template){
-  saveTheme("white", "blue")
+  saveTheme("white", "black")
   template = JSON.parse(localStorage.getItem("template"))
 }
 let [background, color] = template
