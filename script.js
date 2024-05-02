@@ -6,7 +6,7 @@ if(!items){
 const list = document.querySelector(".list")
 const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-const activity = ["Click for edit", "Work", "Study", "Buy a coffe"]
+const activity = ["Click for edit", "Work", "Study", "Buy a coffee"]
 
 const date = new Date()
 document.querySelector(".today").textContent = `${day[date.getDay()]}, ${date.getDate()} ${month[date.getMonth()]} ${date.getFullYear()}`
