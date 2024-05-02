@@ -36,13 +36,16 @@ document.addEventListener("click", function(e){
 
 document.addEventListener("change", function(e){
   const target = e.target
-  const color = target.value
+  const currentColor = target.value
   if(target.id === "background"){
-    document.body.style.backgroundColor = color
+    background = currentColor
+    document.body.style.backgroundColor = currentColor
   }
   if(target.id === "color"){
-    document.body.style.color = color
+    color = currentColor
+    document.body.style.color = currentColor
   }
+  saveTheme(background, color)
 })
 
 function changeTheme(){
